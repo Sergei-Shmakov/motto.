@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>popmeal × motto. — коллаборационный напиток</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Manrope:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="header__brand">
+						<img
+							class="header__logo"
+							src="images/motto_logo.png"
+							alt="motto. logo"
+						/>
+						<span class="header__cross"> × </span>
+						<img
+							class="header__logo"
+							src="images/popmeal_logo.svg"
+							alt="pompeal logo"
+						/>
+					</div>
+
+					<div class="header__dates">23.07 — 31.08</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="ticket">
+			<div class="glow-disc ticket__glow" aria-hidden="true"></div>
+
+			<div class="container">
+				<div class="ticket__card">
+					<div class="ticket__left">
+						<div class="section-label">Беспроигрышная лотерея от motto.</div>
+
+						<h2 class="ticket__title">Забери свой приз</h2>
+
+						<p class="ticket__text">
+							Ты уже держишь в руках карточку с QR-кодом, которую дают вместе с
+							коллаборационным напитком в popmeal — а значит, приз уже ждёт
+							тебя!
+						</p>
+
+						<p class="ticket__text">
+							Заполни форму, прими условия акции и нажми «Участвовать» — мы
+							сразу покажем, что тебе досталось!
+						</p>
+					</div>
+
+					<div class="ticket__separator"></div>
+
+					<div class="ticket__right">
+						<form id="lotteryForm" class="form">
+							<div class="form__row">
+								<div class="form__field">
+									<label class="form__label" for="firstName"> Имя </label>
+
+									<input
+										class="form__input"
+										type="text"
+										id="firstName"
+										name="firstName"
+										placeholder="Имя"
+										autocomplete="given-name"
+										required
+									/>
+								</div>
+
+								<div class="form__field">
+									<label class="form__label" for="lastName"> Фамилия </label>
+
+									<input
+										class="form__input"
+										type="text"
+										id="lastName"
+										name="lastName"
+										placeholder="Фамилия"
+										autocomplete="family-name"
+										required
+									/>
+								</div>
+							</div>
+
+							<div class="form__field">
+								<label class="form__label" for="contact">
+									Телефон или e-mail
+								</label>
+
+								<input
+									class="form__input"
+									type="text"
+									id="contact"
+									name="contact"
+									placeholder="+7 ... или email@mail.ru"
+									autocomplete="tel"
+									required
+								/>
+							</div>
+
+							<label class="form__consent">
+								<input
+									class="form__checkbox"
+									type="checkbox"
+									id="consent"
+									required
+								/>
+
+								<span class="form__consent-text">
+									Принимаю условия акции и даю согласие на обработку
+									персональных данных согласно
+
+									<a href="#" id="policyLink" class="form__link">
+										политике конфиденциальности
+									</a>
+								</span>
+							</label>
+
+							<button class="form__submit" type="submit">Участвовать</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-drink">
+			<div class="container">
+				<div class="about-drink__grid">
+					<div class="about-drink__content">
+						<div class="section-label">Коллаборационный напиток</div>
+
+						<h1 class="about-drink__title">motto. × popmeal</h1>
+
+						<p class="about-drink__text">
+							Напиток, который помогает замедлиться, расслабиться и вернуть
+							внутренний баланс — так же, как это делает пространство motto.
+							Доступен во всех точках popmeal с 23 июля по 31 августа.
+						</p>
+
+						<div class="about-drink__note">Название напитка</div>
+						<div class="about-drink__composition">
+							<span class="about-drink__tag"> ромашка </span>
+
+							<span class="about-drink__tag"> абрикос </span>
+
+							<span class="about-drink__tag"> лимон </span>
+
+							<span class="about-drink__tag"> магний </span>
+
+							<span class="about-drink__tag"> экстракт смородины </span>
+						</div>
+					</div>
+
+					<div class="about-drink__visual">
+						<div class="glow-disc about-drink__glow" aria-hidden="true"></div>
+
+						<span class="about-drink__placeholder"> фото напитка </span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="brands">
+			<div class="container">
+				<div class="brands__grid">
+					<article class="brand-card">
+						<div class="brand-card__image">
+							<img
+								class="brand-card__photo"
+								src="images/mirror-detail-popmeal.webp"
+								alt="Пространство motto."
+							/>
+						</div>
+
+						<div class="brand-card__body">
+							<div class="section-label">О бренде</div>
+
+							<h3 class="brand-card__title">popmeal</h3>
+
+							<p class="brand-card__text">
+								Кухня правильного гедонизма в баланс-холле «Место быть».
+								Сбалансированная еда на каждый день для тех, кто постоянно в
+								движении и не хочет выбирать между пользой и вкусом.
+							</p>
+						</div>
+					</article>
+
+					<article class="brand-card">
+						<div class="brand-card__image">
+							<img
+								class="brand-card__photo"
+								src="images/mirror-detail.webp"
+								alt="Пространство motto."
+							/>
+						</div>
+
+						<div class="brand-card__body">
+							<div class="section-label">О бренде</div>
+
+							<h3 class="brand-card__title">motto.</h3>
+
+							<p class="brand-card__text">
+								Пространство красоты и баланса в баланс-холле «Место быть» —
+								микс бьюти-пространства и wellness-центра, где гармония и
+								спокойствие ума так же важны, как внешняя красота. Бьюти-услуги,
+								SPA-ритуалы, аппаратная и врачебная косметология.
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= МЕХАНИКА АКЦИИ ================= -->
+
+		<section class="mechanics">
+			<div class="container">
+				<div class="section-label">Как получить приз</div>
+
+				<h2 class="mechanics__title">Четыре шага от заказа до подарка</h2>
+
+				<div class="mechanics__grid">
+					<article class="step-card">
+						<div class="step-card__number">01</div>
+
+						<h4 class="step-card__title">Закажи напиток</h4>
+
+						<p class="step-card__text">
+							С 23.07 по 31.08 в любой точке popmeal.
+						</p>
+					</article>
+
+					<article class="step-card">
+						<div class="step-card__number">02</div>
+
+						<h4 class="step-card__title">Получи карточку</h4>
+
+						<p class="step-card__text">
+							Вместе с напитком — карточка с QR-кодом.
+						</p>
+					</article>
+
+					<article class="step-card">
+						<div class="step-card__number">03</div>
+
+						<h4 class="step-card__title">Перейди на сайт</h4>
+
+						<p class="step-card__text">
+							Отсканируй QR и попади на эту страницу.
+						</p>
+					</article>
+
+					<article class="step-card">
+						<div class="step-card__number">04</div>
+
+						<h4 class="step-card__title">Забери приз</h4>
+
+						<p class="step-card__text">
+							Заполни форму — приз гарантирован каждому.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- ================= ПРИЗЫ ================= -->
+
+		<section class="prizes">
+			<div class="container">
+				<div class="section-label">Что можно выиграть</div>
+
+				<h2 class="prizes__title">Призы от motto.</h2>
+
+				<p class="prizes__description">
+					Каждому участнику гарантирован один из призов ниже — выпадает случайно
+					сразу после заполнения формы.
+				</p>
+
+				<div class="prizes__grid">
+					<article class="prize-card">
+						<span class="prize-card__name"> 1000 ₽ на услуги </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> −15% на чек </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> −20% на чек </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name">
+							Сеанс в детокс-капсуле Iayshi Dome (30 мин.)
+						</span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> Маникюр без покрытия </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> Экспресс-уход для лица </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> Экспресс-уход для волос </span>
+					</article>
+
+					<article class="prize-card">
+						<span class="prize-card__name"> Прессотерапия Arosha </span>
+					</article>
+
+					<article class="prize-card prize-card--grand">
+						<div class="glow-disc prize-card__glow" aria-hidden="true"></div>
+
+						<div class="prize-card__content">
+							<div class="section-label prize-card__label">
+								Главный приз · разыгрывается один раз
+							</div>
+
+							<h4 class="prize-card__title">Процедура BBL Forever Young</h4>
+
+							<p class="prize-card__text">
+								Достанется одному счастливчику ближе к завершению акции, 31.08
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= ГАЛЕРЕЯ ================= -->
+
+		<section class="gallery section" id="gallery">
+			<div class="container">
+				<div class="section-label">Фотогалерея</div>
+
+				<h2 class="section-title">Пространство <span>motto.</span></h2>
+
+				<div class="swiper gallerySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/room-red-panel.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/device-classys.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/lobby-flowers.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/corridor-glow.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/pulse-nails.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/pulse-shelf.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1416-Edit_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1429-HDR-Edit_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1435-HDR_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1541_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1547_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_1552_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/IMG_9465_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/interior pause 1_11zon_11zon.webp" alt="" />
+						</div>
+
+						<div class="swiper-slide">
+							<img src="images/interior pulse 2_11zon_11zon.webp" alt="" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<!-- ================= FOOTER ================= -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__brand">
+						<div class="header__brand">
+							<img
+								class="header__logo"
+								src="images/motto_logo.png"
+								alt="motto. logo"
+							/>
+							<span class="header__cross"> × </span>
+							<img
+								class="header__logo"
+								src="images/popmeal_logo.svg"
+								alt="pompeal logo"
+							/>
+						</div>
+
+						<p class="footer__text">
+							Пространство красоты, эстетики и современных процедур. Совместная
+							акция popmeal × motto.
+						</p>
+					</div>
+
+					<div class="footer__contacts">
+						<h4>Контакты</h4>
+
+						<a href="#" class="footer__contact">
+							<i class="fa-solid fa-location-dot"></i>
+							Мясницкая, 24/7, стр. 1
+						</a>
+
+						<a href="tel:+79999999999" class="footer__contact">
+							<i class="fa-solid fa-phone"></i>
+							+7 (999) 999-99-99
+						</a>
+
+						<a href="#" class="footer__contact">
+							<i class="fa-brands fa-telegram"></i>
+							Telegram
+						</a>
+					</div>
+
+					<div class="footer__documents">
+						<h4>Документы</h4>
+
+						<a href="#" id="policyLink2" class="footer__link">
+							Политика конфиденциальности
+						</a>
+
+						<a href="#" class="footer__link"> Правила акции </a>
+					</div>
+				</div>
+
+				<div class="footer__bottom">
+					<span>© 2026 popmeal × motto.</span>
+
+					<span>Все права защищены.</span>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ================= МОДАЛЬНОЕ ОКНО ================= -->
+
+		<div class="modal-overlay" id="overlay">
+			<div class="modal">
+				<div class="glow-disc modal__glow" aria-hidden="true"></div>
+
+				<div class="modal__stamp">ПРИЗ</div>
+
+				<div class="section-label">Ты выиграл(а)</div>
+
+				<h3 class="modal__title" id="prizeTitle">—</h3>
+
+				<p class="modal__text">
+					Покажи этот экран администратору motto., чтобы получить приз.
+				</p>
+
+				<button class="modal__button" id="closeModal" type="button">
+					Отлично
+				</button>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/lottery.js"></script>
+		<script src="js/swiper.js"></script>
+	</body>
+</html>

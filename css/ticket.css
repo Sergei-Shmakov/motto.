@@ -1,0 +1,188 @@
+.ticket {
+	padding: 56px 0 40px;
+}
+
+.ticket__glow {
+	top: -40px;
+	left: 60%;
+	width: 320px;
+	height: 320px;
+}
+
+.ticket__card {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1.05fr 1px 1fr;
+	overflow: hidden;
+	background: #fff;
+	border-radius: var(--radius);
+}
+
+.ticket__left {
+	padding: 44px 40px;
+}
+
+.ticket__title {
+	margin: 14px 0;
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.ticket__text {
+	max-width: 38ch;
+	margin: 0 0 10px;
+	color: var(--ink-soft);
+	font-size: 15px;
+	line-height: 1.65;
+}
+
+.ticket__separator {
+	position: relative;
+	background-image: radial-gradient(
+		circle at 0 50%,
+		transparent 9px,
+		var(--line) 9.5px,
+		var(--line) 10px,
+		transparent 10.5px
+	);
+}
+
+.ticket__separator::before,
+.ticket__separator::after {
+	content: '';
+	position: absolute;
+	left: -9px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--chocolate);
+}
+
+.ticket__separator::before {
+	top: -9px;
+}
+
+.ticket__separator::after {
+	bottom: -9px;
+}
+
+.ticket__right {
+	padding: 44px 40px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.form__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.form__field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__label {
+	margin-bottom: 6px;
+	color: var(--ink-soft);
+	font-size: 10.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.form__input {
+	width: 100%;
+	padding: 13px 14px;
+	border: 1.5px solid var(--line-strong);
+	border-radius: 12px;
+	background: var(--chocolate);
+	color: var(--ink);
+	font:
+		15px 'Manrope',
+		sans-serif;
+	transition: border-color 0.15s ease;
+}
+
+.form__input:focus {
+	outline: none;
+	border-color: var(--maroon);
+}
+
+.form__consent {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin-top: 2px;
+	color: var(--ink-soft);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.form__checkbox {
+	flex: none;
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	accent-color: var(--maroon);
+}
+
+.form__link {
+	text-decoration: underline;
+}
+
+.form__submit {
+	margin-top: 8px;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 100px;
+	background: var(--maroon);
+	color: #fff;
+	font-family: 'Oranienbaum', serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition:
+		background 0.15s ease,
+		transform 0.1s ease;
+}
+
+.form__submit:hover {
+	background: #3d0000;
+}
+
+.form__submit:active {
+	transform: scale(0.98);
+}
+
+.form__submit:focus-visible {
+	outline: 3px solid var(--ruddy);
+	outline-offset: 2px;
+}
+
+.form__note {
+	margin-top: 2px;
+	text-align: center;
+	color: var(--ink-soft);
+	font-size: 11px;
+}
+
+@media (max-width: 760px) {
+	.ticket__card {
+		grid-template-columns: 1fr;
+	}
+	.ticket__separator {
+		display: none;
+	}
+	.ticket__left,
+	.ticket__right {
+		padding: 32px 24px;
+	}
+	.form__row {
+		grid-template-columns: 1fr;
+	}
+}

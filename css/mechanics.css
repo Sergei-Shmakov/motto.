@@ -1,0 +1,78 @@
+.mechanics {
+	padding: 74px 0 20px;
+}
+.section-label {
+	padding-bottom: 10px;
+}
+.mechanics__title {
+	max-width: 22ch;
+
+	margin-bottom: 36px;
+
+	font-size: 28px;
+}
+
+.mechanics__grid {
+	display: grid;
+
+	grid-template-columns: repeat(4, 1fr);
+
+	gap: 18px;
+}
+
+.step-card {
+	padding: 22px 20px;
+
+	background: #fff;
+
+	border: 1px solid var(--line);
+
+	border-radius: 16px;
+	transition: 300ms;
+}
+
+.step-card:hover {
+	transform: scale(0.95);
+}
+
+.step-card__number {
+	margin-bottom: 12px;
+
+	color: var(--maroon);
+
+	font-family: 'Oranienbaum', serif;
+
+	font-size: 20px;
+}
+
+.step-card__title {
+	margin: 0 0 8px;
+
+	font-family: 'Oranienbaum', serif;
+
+	font-size: 16.5px;
+
+	font-weight: 400;
+}
+
+.step-card__text {
+	margin: 0;
+
+	color: var(--ink-soft);
+
+	font-size: 13px;
+
+	line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+	.mechanics__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 560px) {
+	.mechanics__grid {
+		grid-template-columns: 1fr;
+	}
+}

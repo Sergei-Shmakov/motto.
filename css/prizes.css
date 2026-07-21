@@ -1,0 +1,144 @@
+.prizes {
+	padding: 70px 0;
+}
+
+.prizes .section-label {
+	margin-bottom: 10px;
+}
+
+.prizes__title {
+	margin-bottom: 8px;
+
+	font-size: 28px;
+}
+
+.prizes__description {
+	max-width: 60ch;
+	margin-bottom: 30px;
+	color: var(--ink-soft);
+	font-size: 14.5px;
+	line-height: 1.6;
+}
+
+.prizes__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 14px;
+}
+
+.prize-card {
+	padding: 18px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	background: #fff;
+	transition: 400ms;
+}
+.prize-card:hover {
+	background: var(--maroon);
+	color: #fff;
+}
+.prize-card:hover .prize-card__name {
+	color: #fff;
+}
+
+.prize-card__name {
+	display: block;
+	color: var(--ink);
+	font-size: 13.5px;
+	line-height: 1.5;
+}
+
+.prize-card--grand {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	overflow: hidden;
+	grid-column: span 4;
+	padding: 24px 28px;
+	background: var(--maroon);
+	border: none;
+	color: #fff;
+	transition: 400ms;
+}
+.prize-card--grand:hover {
+	background: #fff;
+	color: var(--ink);
+}
+.prize-card--grand:hover .prize-card__text {
+	color: var(--ink);
+}
+.prize-card--grand:hover .prize-card__label {
+	color: var(--maroon);
+}
+
+.prize-card__content {
+	position: relative;
+	z-index: 1;
+}
+
+.prize-card__glow {
+	top: -70px;
+
+	right: 40px;
+
+	width: 220px;
+
+	height: 220px;
+
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.3) 0%,
+		rgba(255, 255, 255, 0) 70%
+	);
+}
+
+.prize-card__label {
+	color: var(--chestnut);
+	transition: 400ms;
+	margin-bottom: 6px;
+}
+
+.prize-card__title {
+	margin: 0;
+
+	font-size: 20px;
+
+	font-family: 'Oranienbaum', serif;
+
+	font-weight: 400;
+}
+
+.prize-card__text {
+	margin: 4px 0 0;
+
+	color: rgba(255, 255, 255, 0.8);
+
+	font-size: 13px;
+	transition: 400ms;
+}
+
+@media (max-width: 900px) {
+	.prizes__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.prize-card--grand {
+		grid-column: span 2;
+
+		flex-direction: column;
+
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 560px) {
+	.prizes__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.prize-card--grand {
+		grid-column: 1;
+	}
+}

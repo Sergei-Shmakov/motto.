@@ -1,0 +1,130 @@
+.about-drink {
+	padding: 78px 0 66px;
+}
+
+.about-drink__grid {
+	display: grid;
+	grid-template-columns: 1fr 0.9fr;
+	align-items: center;
+	gap: 52px;
+}
+
+.about-drink__title {
+	margin-bottom: 16px;
+	font-size: 38px;
+	line-height: 1.2;
+}
+
+.about-drink__text {
+	max-width: 48ch;
+	margin: 0 0 18px;
+	color: var(--ink-soft);
+	font-size: 15.5px;
+	line-height: 1.7;
+}
+
+.about-drink__composition {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.about-drink__tag {
+	padding: 7px 14px;
+	border-radius: 100px;
+	background: var(--chestnut);
+	color: var(--maroon);
+	font-size: 12.5px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	transition: 300ms;
+}
+.about-drink__tag:hover {
+	transform: translateY(-10px);
+}
+
+.about-drink__note {
+	display: inline-flex;
+	align-items: center;
+	padding: 18px 24px;
+	margin-bottom: 22px;
+	border-left: 6px solid var(--maroon);
+	border-radius: 14px;
+
+	background: #fff;
+
+	font-family: 'Oranienbaum', serif;
+	font-size: 24px;
+	line-height: 1.35;
+
+	color: var(--maroon);
+
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-drink__visual {
+	position: relative;
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	overflow: hidden;
+
+	aspect-ratio: 4 / 5;
+
+	border-radius: var(--radius);
+
+	background: linear-gradient(
+		160deg,
+		var(--maroon) 0%,
+		#7a1a12 45%,
+		var(--ruddy) 100%
+	);
+}
+
+.about-drink__glow {
+	top: -40px;
+
+	right: -60px;
+
+	width: 260px;
+
+	height: 260px;
+
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.25) 0%,
+		rgba(255, 255, 255, 0) 70%
+	);
+}
+
+.about-drink__placeholder {
+	position: relative;
+
+	z-index: 1;
+
+	max-width: 16ch;
+
+	color: rgba(255, 255, 255, 0.9);
+
+	text-align: center;
+
+	font-family: 'Oranienbaum', serif;
+
+	font-size: 16px;
+
+	line-height: 1.5;
+}
+
+@media (max-width: 780px) {
+	.about-drink__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.about-drink__title {
+		font-size: 30px;
+	}
+}

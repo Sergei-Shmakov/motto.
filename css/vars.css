@@ -1,0 +1,20 @@
+:root {
+	--maroon: #530001;
+	--chestnut: #d6acae;
+	--brown-dark: #2b1305;
+	--gray-pastel: #d1d1c9;
+	--vanilla: #d3b89d;
+	--ruddy: #b2572c;
+	--chocolate: #eae4db;
+
+	--ink: #1a1b1f;
+	--ink-soft: #5c564c;
+
+	--line: rgba(26, 27, 31, 0.14);
+	--line-strong: rgba(26, 27, 31, 0.32);
+
+	--radius: 22px;
+
+	--container-width: 1100px;
+	--container-padding: 24px;
+}
