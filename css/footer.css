@@ -32,12 +32,6 @@
 	margin-bottom: 20px;
 }
 
-.footer__text {
-	max-width: 420px;
-	line-height: 1.7;
-	opacity: 0.75;
-}
-
 .footer h4 {
 	margin: 0 0 18px;
 	font-size: 18px;
@@ -113,10 +107,6 @@
 	.footer__documents {
 		align-items: center;
 		justify-self: anchor-center;
-	}
-
-	.footer__text {
-		max-width: 100%;
 	}
 
 	.footer__contact,
